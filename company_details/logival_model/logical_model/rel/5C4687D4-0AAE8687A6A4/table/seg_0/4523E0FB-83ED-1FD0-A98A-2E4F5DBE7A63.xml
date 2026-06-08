@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4523E0FB-83ED-1FD0-A98A-2E4F5DBE7A63" name="PAYMENT">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>D8A871F5-E1A2-109C-07E7-0D6BB28814BF</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="payment_id" id="62A1B32F-BCD1-8D2A-D64C-BDE37DDEB9EC">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique pay,ent identifier]]></commentInRDBMS>
+<generatorID>2F99FDE4-E288-DEA9-64C0-4C64FACD81C0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="transaction_id" id="C3B6ED98-3250-C749-D114-65C9A3CB9904">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of paymrny]]></commentInRDBMS>
+<generatorID>AD2C0B1E-A647-D2BB-3AF7-4D521A03C666</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_amount" id="0A420744-CCEA-6029-BA30-C6B6C05EFA0B">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[payment amount for subscription ]]></commentInRDBMS>
+<generatorID>EBA4B5E4-4068-D445-B87C-3AA59A4DD7FA</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="254B3AFA-62D1-5D88-420B-A8BFD510B7CE">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of usre]]></commentInRDBMS>
+<generatorID>ACCD3B50-6D4D-4587-6FEC-2739DD41930E</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93CF1D77-9A23-C34A-4ABC-105C5A9999ED" referredColumn="EC5536E4-EEA3-74ED-01E5-E8F6680287B9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BAB57B1-35F4-A93B-2003-F450F9288546" name="PAYMENT_PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>7F043287-FAD7-7AF9-D356-F15B52A62C11</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62A1B32F-BCD1-8D2A-D64C-BDE37DDEB9EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A16A2CB-38AC-3B89-A67C-89602EBB1EC7" name="PAYMENT_USER_FK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>AE05DC6E-0663-CC07-15FA-A2F5B7E680D7</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="254B3AFA-62D1-5D88-420B-A8BFD510B7CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7CA3842C-4C7C-49EE-E6C1-A26361E762D7" name="SUBSCRIPTION">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>5837B163-5FF7-7E4E-1907-2DE20FFC0B96</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="plan_id" id="4D501754-E6FC-B56C-2C76-2A92BF8FEB55">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[different types of plan id]]></commentInRDBMS>
+<generatorID>2B3FB9D0-6ED2-02D7-B360-8D26EE70ADD7</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plan_desc" id="E6BD25A6-3031-AC5E-1B02-3B1CDC9308F5">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[details of plan ]]></commentInRDBMS>
+<generatorID>AC9D5531-BF48-E472-677D-45FC40CD0C28</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plan_features" id="D5315FCF-ECA1-8C75-A4A4-739B17EA0791">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[various featurs for plan]]></commentInRDBMS>
+<generatorID>A0CC1706-C3D4-24E2-D7C5-F0616336A0ED</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plan_price" id="E259EE1A-8085-0774-3EE3-42E62D3CA555">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[plan price]]></commentInRDBMS>
+<generatorID>9719CCCC-5D39-D26B-8238-03706D2547E8</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CA3AAD4-E9DA-9E4F-0A00-F9E17A85F1F6" name="SUBSCRIPTION_PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>E80779AB-EF4D-6E64-1F8F-F1E51BCCCD7A</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D501754-E6FC-B56C-2C76-2A92BF8FEB55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

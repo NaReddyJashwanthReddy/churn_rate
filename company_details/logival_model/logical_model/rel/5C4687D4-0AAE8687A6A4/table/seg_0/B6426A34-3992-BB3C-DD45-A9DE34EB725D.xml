@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6426A34-3992-BB3C-DD45-A9DE34EB725D" name="CONTENT">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>EC4F32DD-F8BD-D949-00B2-A0578735B3E6</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cont_id" id="8355FE98-F8FC-717A-DED0-476CF29383E7">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of content]]></commentInRDBMS>
+<generatorID>28E916D7-1E82-6B0D-DD48-0481477E5D84</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cont_desc" id="611E0B17-0D3B-45E4-10B9-3F4143366B88">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[breif desc of the content]]></commentInRDBMS>
+<generatorID>12C39B25-9F57-19BA-04E6-DD50ED4E46B4</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cont_address" id="6E8D59B8-40A9-EA13-75C9-3611A1681157">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[address of the video/any file stored in s3 bucket or anyother storages.]]></commentInRDBMS>
+<generatorID>76755673-D2E6-E844-91BC-EF8C791CB61E</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71493C3E-8710-90BC-80D8-E89C645B8A8C" name="CONTENT_PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>D93001F5-74A4-1F11-C2BB-A5F6F0B00A32</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8355FE98-F8FC-717A-DED0-476CF29383E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="plan type" directorySegmentName="seg_0" id="7EB73A7C-DC2D-A8C1-1206-9E10422B5AC0">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:36:22 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<sourcePk>E80779AB-EF4D-6E64-1F8F-F1E51BCCCD7A</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>type</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5837B163-5FF7-7E4E-1907-2DE20FFC0B96</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>47B9AFAC-C413-0262-E51E-AB8E0037E933</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

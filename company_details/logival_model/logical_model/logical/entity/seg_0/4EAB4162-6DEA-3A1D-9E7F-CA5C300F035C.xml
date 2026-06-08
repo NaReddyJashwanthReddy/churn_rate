@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4EAB4162-6DEA-3A1D-9E7F-CA5C300F035C" name="HISTORY">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:45:13 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hist_datetime" id="4A6DEF84-C545-7C9F-9470-842D2DDB880E">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:45:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[datetime of user hitory]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cont_id" id="C31F1537-89B4-5D8F-3E7A-7A5CE07FB5D7">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:52:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of content]]></commentInRDBMS>
+<generatorID>D2886E00-686B-4D79-E95C-B1B7AC23804C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<referedAttribute>28E916D7-1E82-6B0D-DD48-0481477E5D84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="F55F9483-5698-E74C-DDC3-EBA6F67B01A6">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:53:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of usre]]></commentInRDBMS>
+<generatorID>01CBFBC2-1B32-D546-2D04-D96B4CA4420D</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<referedAttribute>278D37EA-2081-BAA0-1C74-FA8DB13B917D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6F208501-DDCD-5DCD-E53F-8BE9B1E3BE4D" name="HISTORY PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:46:19 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A6DEF84-C545-7C9F-9470-842D2DDB880E</attributeRef>
+<attributeRef>C31F1537-89B4-5D8F-3E7A-7A5CE07FB5D7</attributeRef>
+<attributeRef>F55F9483-5698-E74C-DDC3-EBA6F67B01A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

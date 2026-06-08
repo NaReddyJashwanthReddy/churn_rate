@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EC4F32DD-F8BD-D949-00B2-A0578735B3E6" name="CONTENT">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:46:46 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cont_id" id="28E916D7-1E82-6B0D-DD48-0481477E5D84">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:48:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of content]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cont_desc" id="12C39B25-9F57-19BA-04E6-DD50ED4E46B4">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:49:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[breif desc of the content]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cont_address" id="76755673-D2E6-E844-91BC-EF8C791CB61E">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[address of the video/any file stored in s3 bucket or anyother storages.]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D93001F5-74A4-1F11-C2BB-A5F6F0B00A32" name="CONTENT PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:48:46 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>28E916D7-1E82-6B0D-DD48-0481477E5D84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

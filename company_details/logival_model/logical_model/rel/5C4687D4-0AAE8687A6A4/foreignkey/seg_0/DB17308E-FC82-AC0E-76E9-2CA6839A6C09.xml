@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DB17308E-FC82-AC0E-76E9-2CA6839A6C09" containerWithKeyObject="28AF0B91-2416-8477-59A2-E6119CB601F9" localFKIndex="486CCC3F-1CFE-9A18-31FC-DE8E98E21BE1" name="user_activity_SUBSCRIPTION_FK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>7EB73A7C-DC2D-A8C1-1206-9E10422B5AC0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<referredTableLongName>SUBSCRIPTION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7CA3842C-4C7C-49EE-E6C1-A26361E762D7</referredTableID>
+<keyObject>7CA3AAD4-E9DA-9E4F-0A00-F9E17A85F1F6</keyObject>
+<referredKeyID>7CA3AAD4-E9DA-9E4F-0A00-F9E17A85F1F6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>plan_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF3CA488-9CD0-C7E6-48D9-71E7E7AFA0C7" name="USER">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:37:26 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="278D37EA-2081-BAA0-1C74-FA8DB13B917D">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:41:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of usre]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>32 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usr_flag" id="ACF7EA0B-E097-D123-43C7-3279679E7289">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:42:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[flag a user who is inactive - Y yes, N no]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CCE0AA5D-C280-ED44-C829-29E84FD530F0" name="USER PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:41:28 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>278D37EA-2081-BAA0-1C74-FA8DB13B917D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

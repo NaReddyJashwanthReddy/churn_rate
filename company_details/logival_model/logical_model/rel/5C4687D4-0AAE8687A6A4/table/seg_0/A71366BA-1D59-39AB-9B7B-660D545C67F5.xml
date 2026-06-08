@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A71366BA-1D59-39AB-9B7B-660D545C67F5" name="ACTIVITIES">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>27FB833E-3CFE-E35B-9CA7-B5FE320DD459</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="act_type" id="B9D7D19A-82AF-C4CE-A8BE-D233E471E112">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[id of activity]]></commentInRDBMS>
+<generatorID>1A797A12-3F85-AA20-F625-D3D5F03919E7</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="act_date" id="E152D0C3-97C1-5223-9085-5EE0C6030ADA">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the activity occured]]></commentInRDBMS>
+<generatorID>CD4F2252-F081-0240-64FB-E1C45C698EED</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="act_desc" id="F2359148-F33E-71B3-6BB6-CB04550438C9">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[a breif desc of activity]]></commentInRDBMS>
+<generatorID>D81ED406-8FE4-524E-3B27-3F829ABD00AC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="act_feedback" id="91DC8827-68E5-724B-296E-60BEC7116BC3">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[feedback of the activityy]]></commentInRDBMS>
+<generatorID>50F2F997-4513-C343-0CA2-682C6578DDDC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EF5CFE1-9A98-4454-FE91-38CC4BBF6794" name="ACTIVITIES_PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:59:37 UTC</createdTime>
+<generatorID>81F7482D-E04E-B748-3BEC-5C043F9C1C66</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9D7D19A-82AF-C4CE-A8BE-D233E471E112"/>
+<colUsage columnID="E152D0C3-97C1-5223-9085-5EE0C6030ADA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

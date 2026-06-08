@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5837B163-5FF7-7E4E-1907-2DE20FFC0B96" name="SUBSCRIPTION">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:32:42 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="plan_id" id="2B3FB9D0-6ED2-02D7-B360-8D26EE70ADD7">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:32:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[different types of plan id]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plan_desc" id="AC9D5531-BF48-E472-677D-45FC40CD0C28">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:33:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[details of plan ]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plan_features" id="A0CC1706-C3D4-24E2-D7C5-F0616336A0ED">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:34:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[various featurs for plan]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plan_price" id="9719CCCC-5D39-D26B-8238-03706D2547E8">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:35:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[plan price]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E80779AB-EF4D-6E64-1F8F-F1E51BCCCD7A" name="SUBSCRIPTION PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:33:20 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2B3FB9D0-6ED2-02D7-B360-8D26EE70ADD7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

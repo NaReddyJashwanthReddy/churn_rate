@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47B9AFAC-C413-0262-E51E-AB8E0037E933" name="user_activity">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:29:41 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="plan_id" id="0AC91F83-A0A5-072F-0BD6-A45775483464">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:36:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[different types of plan id]]></commentInRDBMS>
+<generatorID>7EB73A7C-DC2D-A8C1-1206-9E10422B5AC0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<referedAttribute>2B3FB9D0-6ED2-02D7-B360-8D26EE70ADD7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="7A0208D1-43FB-53F4-F103-0E261A4BE9F7">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:44:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier of usre]]></commentInRDBMS>
+<generatorID>ED62CBF4-767D-E078-D0AE-6360FDB7E037</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<referedAttribute>278D37EA-2081-BAA0-1C74-FA8DB13B917D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datetime_lastsubscribe" id="B611E9B5-DB3D-6FD7-23BB-A00232068E0E">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:31:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[date type of each record of user subscription plan]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="act_type" id="242C2E14-F237-93AF-5749-3449B35E89A3">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:37:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[id of activity]]></commentInRDBMS>
+<generatorID>E9BE7515-84AC-9673-EF85-64448978CDD5</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<referedAttribute>1A797A12-3F85-AA20-F625-D3D5F03919E7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="act_date" id="6CB0614C-3E70-DBDB-B7C4-1A7983710F13">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:37:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the activity occured]]></commentInRDBMS>
+<generatorID>E9BE7515-84AC-9673-EF85-64448978CDD5</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<referedAttribute>CD4F2252-F081-0240-64FB-E1C45C698EED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7410C96D-AF6E-D2DB-D862-BF44BA6AE685" name="user_activity PK">
+<createdBy>tangw</createdBy>
+<createdTime>2026-06-08 12:37:02 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="5C4687D4-47FF-8418-6874-0AAE8687A6A4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0AC91F83-A0A5-072F-0BD6-A45775483464</attributeRef>
+<attributeRef>7A0208D1-43FB-53F4-F103-0E261A4BE9F7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
