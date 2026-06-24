@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Churn Prediction Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <h1>Churn Prediction Dashboard</h1>
+    <p class="subtitle">Score customers, see who's at risk, and what's driving it.</p>
+  </header>
+
+  <section class="source-card">
+    <div class="source-option">
+      <h2>Demo data</h2>
+      <p>Run predictions on the saved sample dataset.</p>
+      <button id="runDemoBtn" class="btn btn-primary">Run demo</button>
+    </div>
+
+    <div class="divider"><span>or</span></div>
+
+    <div class="source-option">
+      <h2>Upload your own</h2>
+      <p>Upload a CSV of customer records to score.</p>
+      <div class="upload-row">
+        <label class="file-label" for="csvFileInput">
+          <span id="fileLabelText">Choose CSV file</span>
+        </label>
+        <input type="file" id="csvFileInput" accept=".csv" hidden />
+        <button id="uploadBtn" class="btn btn-primary" disabled>Upload &amp; predict</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="threshold-row">
+    <label for="thresholdInput">Churn threshold</label>
+    <input type="number" id="thresholdInput" min="0" max="1" step="0.05" value="0.5" />
+    <span class="hint">Probability at or above this counts as "at risk"</span>
+  </div>
+
+  <p id="statusMsg" class="status" role="status" aria-live="polite"></p>
+
+  <section id="dashboard" class="dashboard hidden">
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <span class="stat-value" id="statTotal">0</span>
+        <span class="stat-label">Total customers</span>
+      </div>
+      <div class="stat-card risk">
+        <span class="stat-value" id="statChurn">0</span>
+        <span class="stat-label">At risk</span>
+      </div>
+      <div class="stat-card safe">
+        <span class="stat-value" id="statRetained">0</span>
+        <span class="stat-label">Retained</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="statRate">0%</span>
+        <span class="stat-label">Churn rate</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Top churn drivers</h2>
+      <p class="panel-sub">Features ranked by importance in the model.</p>
+      <table class="fi-table">
+        <thead>
+          <tr><th>Rank</th><th>Feature</th><th>Importance</th></tr>
+        </thead>
+        <tbody id="fiTableBody"></tbody>
+      </table>
+      <p id="fiEmpty" class="empty-note hidden">Feature importance isn't available for this model.</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Customers</h2>
+          <p class="panel-sub">Ranked by churn risk. Click a row for details.</p>
+        </div>
+        <div class="panel-controls">
+          <div class="filter-tabs" id="filterTabs">
+            <button class="tab active" data-filter="all">All</button>
+            <button class="tab" data-filter="churn">At risk</button>
+            <button class="tab" data-filter="retained">Retained</button>
+          </div>
+          <input type="search" id="searchInput" placeholder="Search by customer ID" />
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="customer-table" id="customerTable">
+          <thead>
+            <tr>
+              <th data-sort="customer_id">ID</th>
+              <th data-sort="plan_type">Plan</th>
+              <th data-sort="tenure_days">Tenure (d)</th>
+              <th data-sort="watch_hours_30d">Watch hrs</th>
+              <th data-sort="login_count_30d">Logins</th>
+              <th data-sort="days_since_last_login">Last login</th>
+              <th data-sort="churn_probability">Risk</th>
+            </tr>
+          </thead>
+          <tbody id="customerTableBody"></tbody>
+        </table>
+      </div>
+      <p id="tableEmpty" class="empty-note hidden">No customers match this filter.</p>
+    </div>
+
+  </section>
+
+</div>
+
+<div id="overlay" class="overlay hidden"></div>
+<aside id="detailPanel" class="detail-panel" aria-hidden="true">
+  <button id="closeDetail" class="close-btn" aria-label="Close">&times;</button>
+  <div id="detailContent"></div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

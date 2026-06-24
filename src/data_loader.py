@@ -10,7 +10,7 @@ from typing import Tuple
 import pandas as pd
 
 from src.config import CSV_PATH, NUMERIC_COLUMNS_EXCLUDE, TARGET_COLUMN
-from churn_rate.utils.logger import get_logger
+from utils.logger import get_logger
 
 logger = get_logger(__name__)
 

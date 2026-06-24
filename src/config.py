@@ -12,6 +12,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 MODEL_DIR = os.path.join(PROJECT_ROOT, "models")
 CSV_PATH = os.path.join(DATA_DIR, "churn_analytics_data.csv")
+TEST_CSV_FILE = os.path.join(DATA_DIR,"churn_test_data.csv")
 
 # Ensure model directory exists
 os.makedirs(MODEL_DIR, exist_ok=True)

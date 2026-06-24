@@ -12,7 +12,7 @@ This script orchestrates the entire training pipeline:
 from src.data_loader import DataLoader
 from src.preprocessor import DataPreprocessor
 from src.model import ChurnModel
-from churn_rate.utils.logger import get_logger
+from utils.logger import get_logger
 import joblib
 import os
 from src.config import MODEL_DIR

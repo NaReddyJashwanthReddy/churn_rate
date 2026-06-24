@@ -20,7 +20,7 @@ from src.config import (
     MODEL_SCORING_METRIC,
     MODEL_DIR,
 )
-from churn_rate.utils.logger import get_logger
+from utils.logger import get_logger
 
 logger = get_logger(__name__)
 

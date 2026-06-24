@@ -19,7 +19,7 @@ from src.data_loader import DataLoader
 from src.preprocessor import DataPreprocessor
 from src.model import ChurnModel
 from src.predictor import ChurnPredictor
-from churn_rate.utils.logger import get_logger
+from utils.logger import get_logger
 
 __all__ = [
     'DataLoader',
