@@ -140,7 +140,8 @@ This project demonstrates how machine learning can support business decision-mak
 * Prioritizing customer retention efforts
 * Supporting targeted business actions
 * Evaluating intervention strategies
-
+* Supporting targeted business actions
+* Evaluating intervention strategies
 ## End-to-End Architecture
 
 ```text
