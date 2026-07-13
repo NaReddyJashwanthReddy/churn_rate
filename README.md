@@ -140,8 +140,7 @@ This project demonstrates how machine learning can support business decision-mak
 * Prioritizing customer retention efforts
 * Supporting targeted business actions
 * Evaluating intervention strategies
-* Supporting targeted business actions
-* Evaluating intervention strategies
+* Revenge is a fools game
 ## End-to-End Architecture
 
 ```text
