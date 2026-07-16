@@ -164,3 +164,4 @@ Power BI Dashboard
 A/B Testing Simulation
 ```
 
+The scope of this project is BIG
